@@ -1,0 +1,296 @@
+/* General Style for the Section */
+body {
+    font-family: 'Arial', sans-serif; /* Uses Arial font for a simple, clean look */
+    background-color: #f0fff0;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray text for readability */
+}
+
+h1 {
+    font-size: 3rem;
+    color: #9b4288; /* Light green for headings */
+    text-align: center; /* Centers the heading */
+    margin-bottom: 30px; /* Adds space below */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(104, 104, 170); /* blue for subheadings */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666; /* Lighter gray text for body */
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+section {
+    max-width: 1000px; /* Maximum width for readability */
+    margin: 50px auto; /* Center the section on the page with spacing */
+    padding: 20px; /* Padding inside the section */
+    background: radial-gradient(#fff,#2ba6aa);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+}
+
+/* Styling for Paragraphs */
+section p {
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    color: #555; /* Softer gray for text */
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Bold Text within Paragraphs */
+section p b {
+    color:  #9b4288; /* Light green for emphasis */
+    font-weight: bold; /* Makes the bold text stand out */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    section {
+        margin: 20px; /* Reduce margin for smaller screens */
+        padding: 15px; /* Adjust padding for mobile devices */
+    }
+
+    section p {
+        font-size: 1rem; /* Slightly smaller font for mobile readability */
+    }
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2ba6aa;
+    padding: 20px 0;
+    text-align: center; /* Centers the nav items */
+}
+
+nav ul {
+    list-style: none; /* Removes default list bullets */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    color: #fff; /* White text color for contrast */
+    font-size: 18px;
+    text-decoration: none; /* Removes underline from links */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds space between letters for style */
+    font-weight: bold; /* Makes the text bold */
+    transition: all 0.3s ease; /* Smooth transition effect on hover */
+}
+
+nav ul li a:hover {
+    color: #98fb98; /* Pale green color on hover for emphasis */
+    transform: scale(1.1); /* Slightly enlarges the text on hover */
+}
+
+/* Main Content Section */
+.row {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between elements */
+    padding: 50px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    background: radial-gradient(#fff,#2ba6aa);
+
+}
+
+.col-1 {
+    flex: 1;
+    padding: 20px;
+    max-width: 45%; /* Restricts max width for proper spacing */
+    background-color: #e9f5e9; /* Light greenish background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    margin: auto; /* Centers the column horizontally */
+}
+
+/* Buttons */
+.button {
+    background-color: #98fb98; /* Pale green background for calls-to-action */
+    color: #333; /* Dark text for contrast */
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.button:hover {
+    background-color: #2ba6aa; /* Light green on hover */
+    transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+/* Product Cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the products */
+    padding: 50px;
+}
+
+.product-card {
+    background-color: #73c2a4bd; /* Light gray background for cards */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a light shadow for depth */
+    width: 250px; /* Fixed width for uniform product cards */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lifts card when hovered */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.product-card img {
+    width: 100%; /* Ensures image covers full width of card */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.product-card img:hover {
+    transform: scale(1.05); /* Slight zoom effect when image is hovered */
+}
+
+.product-name {
+    font-size: 1.4rem;
+    color: #6d1168; /* Light green */
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #a662af; /* Forest green */
+    margin: 10px 0;
+}
+
+.product-rating {
+    color: #ff00d4; /* Gold color for star ratings */
+}
+
+.add-to-cart-btn {
+    background-color: #2ba6aa; /* Lime green background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded button */
+    font-size: 18px;
+    cursor: pointer; /* Pointer cursor for better UX */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #228b22; /* Dark green on hover */
+}
+
+/* Contact Form */
+#contactForm {
+    background-color: #f0fff0; /* Honeydew background for form */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    width: 100%;
+    max-width: 600px; /* Ensures form doesn't stretch too wide */
+    margin: 0 auto; /* Centers the form */
+}
+
+label {
+    font-size: 14px;
+    color: #333333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #15eaf1; /* Light green border */
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #98fb98; /* Pale green border when focused */
+    box-shadow: 0 0 5px rgba(152, 251, 152, 0.8); /* Glow effect on focus */
+}
+
+button[type="submit"] {
+    background-color: #06b2b8; /* Lime green submit button */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%; /* Full-width button */
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #228b22; /* Forest green on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #b1c1c2;
+    color: #fff; /* White text in footer */
+    padding: 20px 0; /* Add padding top and bottom */
+    text-align: center; /* Center the content */
+    position: relative; /* To position the content */
+    bottom: 0; /* To position the content at the bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.search-bar {
+    position: relative;
+    display: inline-block;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .search-bar input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff; /* Change color as desired */
+    box-shadow: 0 0 5px #007bff; /* Change color as desired */
+  }
+
+
+

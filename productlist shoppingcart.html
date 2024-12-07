@@ -1,0 +1,159 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petopia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo_icon.jpg" type="image/x-icon">
+</head>
+<style>
+.icon-cart svg {
+    width: 50px;
+    margin-left: auto;
+}
+header.icon-cart{
+    justify-content: space-between;
+    top:50%;
+    right: 50%;
+    width: 40%;
+    cursor: pointer;
+}
+header .icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: auto;
+    right: auto;
+}
+.cartTab{
+    width: 400px;
+    background-color:  #2ba6aa;
+    color:black;
+    position:fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: transform .5s;
+}
+body .showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+body .showCart .row{
+    transform: translateX(-250px);
+}
+.cartTab .btn button{
+    background-color: rgb(49, 155, 42);
+    font-weight: 300;
+    cursor:pointer;
+}
+.cartTab .btn .closeBtn{
+    background-color: grey;
+}
+.cartTab .listCart .productitem img{
+    width: 90%;
+}
+.cartTab .listCart .productitem{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 30%;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: aliceblue;
+}
+.listCart .quantity span:nth-child(even){
+    background-color: #2ba6aa;
+}
+.listCart .item:nth-child(even){
+    background-color: aqua;
+}
+.listCart{
+    overflow: auto;
+}
+</style>
+<body class="showCart">
+    
+    <nav>
+        <ul id="MenuItems">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li>
+                <form action="search_results.html" method="GET" id="search-form">
+                    <input type="text" id="search" name="query" placeholder="Search" required>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <a href="home.html" class="button">Go back &#8594;</a>
+            <h1>Give Your Pets <br> A Paw-some Style!</h1>
+        </div>
+        <section>
+            <h2>Pet Foods</h2>
+        <header> 
+            <div class="icon-cart">
+                <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
+                  </svg>
+<span>0</span>    
+            </div>      
+                </header>
+            <div class="row">
+                <div class="product-card">
+                    <img src="food.jpg" alt="Dog and cat treats">
+                    <p class="product-name">Dog and Cat Treats</p>
+                    <p class="product-price">P85</p>
+                    <div class="product-rating">★★★★☆</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="cartTab">
+                    <h3>Shopping Cart</h3>
+                    <div class="listCart">
+                        <div class="productitem">
+                            <img src="food.jpg" alt="Dog and cat treats">
+                            <p class="product-name">Dog and Cat Treats</p>
+                            <p class="product-price">P85</p>
+                            <div class="quantity">
+                                <span class="minus">-</span>
+                                <span>1</span> 
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="closeBtn">Close</button>
+                        <button class="checkout">Check out</button>
+                    </div>
+                </div>
+                
+                <footer>
+                    <p>&copy; 2024 Petopia. All rights reserved.</p>
+                    <p>Privacy Policy | Terms of Service | Contact Us</p>
+                </footer>
+            </div>
+            </div>
+        </div>
+            </body>
+            </html>

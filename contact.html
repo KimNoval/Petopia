@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petopia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo_icon.jpg" type="image/x-icon">
+
+</head>
+    <body>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="shop.html">Shop</a></li>
+                <li>
+                    <form action="search_results.html" method="GET" id="search-form">
+                        <div class="search-bar">
+                            <input type="text" id="search" name="query" placeholder="Search " required> 
+                        </div>
+                    </form>
+            </ul>
+        </nav><a href="home.html" class="button">Go Back  &#8594;</a>
+        <div class="container">
+            <form id="contactForm" action="#" method="post">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <footer>
+            <p>&copy; 2024 Petopia. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service | Contact Us</p>
+        </footer>
+        
+    </body>
+    </html>
+    

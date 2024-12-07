@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petopia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo_icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul id="MenuItems">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+            <li><a href="shop.html">Shop</a></li>
+            <li>
+                <form action="search_results.html" method="GET" id="search-form">
+                    <div class="search-bar">
+                        <input type="text" id="search" name="query" placeholder="Search" required> 
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    
+    <a href="home.html" class="button">Go Back &#8594;</a>
+    <h1>Shopping Cart</h1>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product 1</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 3</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 4</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 5</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 6</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 7</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 8</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 9</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 10</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 11</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 12</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 13</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 14</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Product 15</td>
+                    <td><input type="number" class="quantity" value="0" min="0" data-price="0.00"></td>
+                    <td>$0.00</td>
+                    <td class="item-total">$0.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td id="cart-total">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Petopia. All rights reserved.</p>
+        <p>Privacy Policy | Terms of Service | Contact Us</p>
+    </footer>
+</body>
+</html>

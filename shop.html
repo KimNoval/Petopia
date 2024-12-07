@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petopia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo_icon.jpg" type="image/x-icon">
+</head>
+<style>
+svg{
+    width: 40px;
+    justify-items: right;
+}
+header.icon-cart{
+    justify-content: space-between;
+    top:20%;
+    left: 20%;
+    width: 40%;
+}
+header .icon-cart span{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40%;
+}
+.cartTab{
+    width: 400px;
+    background-color:  #2ba6aa;
+    color:black;
+    position:fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+.cartTab .btn button{
+    background-color: rgb(49, 155, 42);
+    font-weight: 300;
+    cursor:pointer;
+}
+.cartTab .btn .closeBtn{
+    background-color: grey;
+}
+.cartTab .listCart .productitem img{
+    width: 100%;
+}
+.cartTab .listCart .productitem{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+h3
+
+.listCart .quantity .span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listCart .quantity .span:nth-child(2){
+    background-color: transparent;
+    color: aliceblue;
+}
+.listCart .quantity .span:nth-child(even){
+    background-color: #2ba6aa;
+}
+</style>
+<body>
+    
+    <nav>
+        <ul id="MenuItems">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li> 
+            <li>
+                <form action="search_results.html" method="GET" id="search-form">
+                    <div class="search-bar">
+                        <input type="text" id="search" name="query" placeholder="Search " required> 
+                    </div>
+                </form>
+        </ul>
+    </nav><a href="home.html" class="button">Go back &#8594;</a>
+            <h1>Give Your Pets <br> A Paw-some Style!</h1>
+        </div>
+
+        <!-- Pet Foods Section -->
+        <section>
+            <h2>Pet Foods</h2>
+        <header> 
+            <div class="icon-cart">
+                <svg <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
+                  </svg>
+<span>0</span>          
+                </header>
+            </div>
+            <div class="row">
+                <div class="product-card">
+                    <img src="food.jpg" alt="Dog and cat treats">
+                    <p class="product-name">Dog and Cat Treats</p>
+                    <p class="product-price">P85</p>
+                    <div class="product-rating">★★★★☆</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="treats.jpg" alt="Pet treats">
+                    <p class="product-name">Pet Treats</p>
+                    <p class="product-price">P80</p>
+                    <div class="product-rating">★★★★☆</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="bird food.jpg" alt="Bird food">
+                    <p class="product-name">Bird Food</p>
+                    <p class="product-price">P85</p>
+                    <div class="product-rating">★★★★☆</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Pet Toys Section -->
+<div class="product-section">
+    <section>
+        <h2>Pet Toys</h2>
+        <div class="row">
+            <div class="product-card">
+                <img src="bird toys.jpg" alt="Bird toys">
+                <p class="product-name">Bird Toys</p>
+                <p class="product-price">P240</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="toys.jpg" alt="Fun pet toys">
+                <p class="product-name">Toys</p>
+                <p class="product-price">P245</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="hamster toys.jpg" alt="Cute hamster toys">
+                <p class="product-name">Cutie Toys</p>
+                <p class="product-price">P150</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Pet Wear Section -->
+<div class="product-section">
+    <section>
+        <h2>Pet Wear</h2>
+        <div class="row">
+            <div class="product-card">
+                <img src="clothes.jpg" alt="Cute pet dress">
+                <p class="product-name">Dress</p>
+                <p class="product-price">P150</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="hoodies.jpg" alt="Pet hoodies">
+                <p class="product-name">Hoodies</p>
+                <p class="product-price">P200</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="shoes.jpg" alt="Stylish pet shoes">
+                <p class="product-name">Shoes</p>
+                <p class="product-price">P120</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Pet Care Products Section -->
+<div class="product-section">
+    <section>
+        <h2>Pet Care Products</h2>
+        <div class="row">
+            <div class="product-card">
+                <img src="harnest.jpg" alt="Pet harness">
+                <p class="product-name">Harness</p>
+                <p class="product-price">P255</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="collar.jpg" alt="Pet collar">
+                <p class="product-name">Collar</p>
+                <p class="product-price">P160</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="brush.jpg" alt="Pet grooming brush">
+                <p class="product-name">Brush</p>
+                <p class="product-price">P175</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Pet Comfort Items Section -->
+<div class="product-section">
+    <section>
+        <h2>Pet Comfort Items</h2>
+        <div class="row">
+            <div class="product-card">
+                <img src="Travel Backpack Cat Carrier.jpg" alt="Travel backpack pet carrier">
+                <p class="product-name">Travel Backpack Pet Carrier</p>
+                <p class="product-price">P565</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="beds.jpg" alt="Comfortable pet bed">
+                <p class="product-name">Pet Bed</p>
+                <p class="product-price">P870</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="smart cat litter box.jpg" alt="Smart pet litter box">
+                <p class="product-name">Smart Pet Litter Box</p>
+                <p class="product-price">P2,000</p>
+                <div class="product-rating">★★★★☆</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</div>
+    <div class="cartTab">
+        <h3>Shopping Cart</h3>
+        <div class="listCart">
+            <div class="productitem">
+                <img src="food.jpg" alt="Dog and cat treats">
+                <p class="product-name">Dog and Cat Treats</p>
+                <p class="product-price">P85</p>
+                <div class="quantity">
+                    <span class="minus">-</span>
+                    <span>1</span> 
+                    <span class="add">+</span>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="closeBtn">Close</button>
+            <button class="checkout">Check out</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Petopia. All rights reserved.</p>
+        <p>Privacy Policy | Terms of Service | Contact Us</p>
+    </footer>
+</div>
+</div>
+
+</body>
+</html>
